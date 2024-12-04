@@ -1,0 +1,34 @@
+body {
+    background-image: url(/assets/fundo5.jpg);
+}
+
+.cabeçalho {
+    color: white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+h1, p {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    margin-top: 50px;
+}
+
+.final {
+    text-align: center;
+    margin-top: 200px;
+    border: 3px solid white; 
+    border-radius: 10%;
+    padding: 20px;
+    background-color: rgba(233, 229, 229, 0.514);
+    max-width: 10%;
+    color: #000;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 70%;
+}
+
+a {
+    text-decoration: none;
+}
