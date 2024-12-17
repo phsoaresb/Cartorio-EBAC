@@ -1,22 +1,122 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cartório EBAC</title>
+    <title>Formulário de Login</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        header {
+            width: 100%;
+            background-color: #030303;
+            color: rgb(245, 221, 6);
+            padding: 10px 20px;
+            box-sizing: border-box;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+            text-align: left;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            margin-top: 20px;
+        }
+        .form-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #000000;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-container button:hover {
+            background-color: #000000;
+        }
+        .form-container a {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            text-decoration: none;
+            color: #000000;
+        }
+        .form-container a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <div class="cabecalho">
-    <h1>Olá Ebacer,</h1>
-    <br>
-    <p>Sistema de registro de alunos<br>e funcionários</p>
-</div>
+    <header>
+        <h1>Olá, Ebacer!</h1>
+    </header>
+    <div class="form-container">
+        <h2>Login</h2>
+        <form action="/login" method="post">
+            <label for="username">Login</label>
+            <input type="text" id="username" name="username" placeholder="Digite seu login" required>
 
-<div class="final">
-    <a href="https://ebaconline.com.br/">Acesse aqui</a>
-</div>
+            <label for="password">Senha</label>
+            <input type="password" id="password" name="password" placeholder="Digite sua senha" required>
 
+            <button type="submit">Entrar</button>
+        </form>
+        <a href="/forgot-password">Esqueci minha senha</a>
+    </div>
+
+    <div class="button">
+        <br>
+        <br>
+        <button type="button" onclick="window.location.href='/criar-conta'" style="
+        background-color: #333;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    ">
+        Criar uma conta
+    </button>
+    
+    <style>
+        button:hover {
+            background-color: #555;
+            transform: scale(1.05);
+        }
+        button:focus {
+            outline: none;
+        }
+    </style>
+    
 </body>
-
 </html>
